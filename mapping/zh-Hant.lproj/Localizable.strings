@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  mapping
+
+  Created by Richard on 2016/12/9.
+  Copyright © 2016年 sailstech. All rights reserved.
+*/
+Msg.PleaseWait ="請稍待";
+Cancel="取消";
+accuracy_verification="精度驗證";
+switch_project="切換專案";
+_logout="登出";
+_account="帳戶";
+token_or_building_id_not_set="token或buildingId未設定";
+load_check_points="載入檢查點";
+
+m="公尺";
+select_project="選擇專案";
+add_project="新增專案";
+cannot_add_project_notify="本帳戶尚未有任何專案，請聯繫richard@sailstech.com獲取進一步訊息";
+yes="是";
+no="否";
+confirm_to_logout="確認要登出嗎？";
+Progressing="加載中";
+_version="版本";

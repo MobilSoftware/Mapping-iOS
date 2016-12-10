@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  mapping
+
+  Created by Richard on 2016/12/9.
+  Copyright © 2016年 sailstech. All rights reserved.
+*/
+Msg.PleaseWait ="Loading";
+Cancel="Cancel";
+accuracy_verification="Accuracy Verification";
+switch_project="Switch Project";
+_logout="Logout";
+_account="Account";
+token_or_building_id_not_set="token or building id is not set in this project";
+load_check_points="Loading Check Points";
+
+m="m";
+select_project="Select Project";
+add_project="Add Project";
+cannot_add_project_notify="You dot't have any project in your account. Please contact richard@sailstech.com for further information.";
+yes="Yes";
+no="No";
+confirm_to_logout="Are you sure to logout?";
+Progressing="Progressing";
+_version="Version";

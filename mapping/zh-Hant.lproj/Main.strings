@@ -1,0 +1,42 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1gM-Il-unw"; */
+"1gM-Il-unw.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "richjing@gmail.com"; ObjectID = "34B-45-dz7"; */
+"34B-45-dz7.text" = "richjing@gmail.com";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4pa-GC-t2z"; */
+"4pa-GC-t2z.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Frt-oa-zzT"; */
+"Frt-oa-zzT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "m"; ObjectID = "S2l-Dh-QSp"; */
+"S2l-Dh-QSp.text" = "m";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "XMD-nR-upL"; */
+"XMD-nR-upL.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "eh9-Z2-CzL"; */
+"eh9-Z2-CzL.text" = "-";
+
+/* Class = "UILabel"; text = "Samples:"; ObjectID = "gdH-yc-NJk"; */
+"gdH-yc-NJk.text" = "採樣數:";
+
+/* Class = "UILabel"; text = "richjing"; ObjectID = "gkQ-Vw-jQB"; */
+"gkQ-Vw-jQB.text" = "richjing";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "hak-Cv-Ll6"; */
+"hak-Cv-Ll6.text" = "0";
+
+/* Class = "UILabel"; text = "Avg. Accuracy:"; ObjectID = "m19-FU-oaU"; */
+"m19-FU-oaU.text" = "平均精度:";
+
+/* Class = "UILabel"; text = "Std. Deviation:"; ObjectID = "nGD-Nc-Dcr"; */
+"nGD-Nc-Dcr.text" = "標準差:";
+
+/* Class = "UILabel"; text = "m"; ObjectID = "xXR-9s-K3i"; */
+"xXR-9s-K3i.text" = "m";
+
+/* Class = "UIButton"; normalTitle = "Email"; ObjectID = "zcA-Cf-APs"; */
+"zcA-Cf-APs.normalTitle" = "Email";

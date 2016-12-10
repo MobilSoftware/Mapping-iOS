@@ -7,16 +7,25 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
+#import "ParseClientConfiguration.h"
+#import "Parse.h"
+#import <ParseUI/ParseUI.h>
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+{
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [Parse initializeWithConfiguration:[ParseClientConfiguration configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
+        configuration.applicationId = @"srANu2SqvQXWB9ZEfuM8";
+        configuration.server = @"https://api.sailstech.com/parse";
+        configuration.localDatastoreEnabled=true;
+    }]];
     return YES;
 }
 

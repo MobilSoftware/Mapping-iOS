@@ -7,23 +7,17 @@
 //
 
 #import "ViewController.h"
+#import <ParseUI/ParseUI.h>
 
-@interface ViewController ()
+@interface ViewController () 
 
 @end
 
 @implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (void)awakeFromNib
+{
+    self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"];
+    self.menuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"menuController"];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
