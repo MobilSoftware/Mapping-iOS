@@ -304,12 +304,16 @@ NSString* Samples;
     output=[NSString stringWithFormat:@"%@Samples,%@\n",output,Samples];
     output=[NSString stringWithFormat:@"%@Std. Deviation,%@\n",output,Deviation];
     output=[NSString stringWithFormat:@"%@Avg. Accuracy,%@\n",output,Accuracy];
-    output=[NSString stringWithFormat:@"%@Check Point ID,Floor,Check Point Latitude,Check Point Longitude,Measurement Latitude,Measurement Longitude,Error(m)\n",output];
+    output=[NSString stringWithFormat:@"%@Check Point ID,Mapping ID,Floor,Check Point Latitude,Check Point Longitude,Measurement Latitude,Measurement Longitude,Error(m)\n",output];
     for(CheckPoint *cp in checkPointList) {
-        output= [NSString stringWithFormat:@"%@%@,%@,%@,%@,%@,%@,%@\n", output,
-                                           cp.verifyCheckPoint[@"id"], cp.verifyCheckPoint[@"floor"],
-                                           @(cp.target.latitude), @(cp.target.longitude),
-                        @(cp.measure.latitude), @(cp.measure.longitude),@(cp.error)];
+        output= [NSString stringWithFormat:@"%@%@,%@,%@,%@,%@,%@,%@,%@\n", output,
+                 cp.verifyCheckPoint[@"id"],
+                 cp.verifyCheckPoint[@"comment"],
+                 cp.verifyCheckPoint[@"floor"],
+                 @(cp.target.latitude),
+                 @(cp.target.longitude),
+                 @(cp.measure.latitude),
+                 @(cp.measure.longitude),@(cp.error)];
     }
 
     [output writeToFile:filePath atomically:TRUE encoding:NSUTF8StringEncoding error:NULL];
