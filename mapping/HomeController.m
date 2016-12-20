@@ -484,7 +484,10 @@
                          success:^{
                              [mSails setReverseFloorList:true];
                              [CommonDefine hidePleaseWaitHudForView:self.view];
+//                             [mSails setGPSFloorLayer:@"B1"];
                              [mSails setGPSFloorLayer:object[@"gps_layer"]];
+                             [mSails setGPSThresholdParameterInToOut:2 outToIn:3 powerThreshold:-75];
+//                             [mSails setGPSThresholdParameterInToOut:1 outToIn:1 powerThreshold:-90];
                              [self mapViewInitial];
                              [self generateFloorSpinnerProcedure];
                          }

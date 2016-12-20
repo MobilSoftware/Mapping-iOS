@@ -11,47 +11,54 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>MBProgressHUD.xcscheme</key>
+		<key>CMPopTipView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false />
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>Parse.xcscheme</key>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false />
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>ParseUI.xcscheme</key>
+		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false />
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>Pods-mapping.xcscheme</key>
+		<key>ParseUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false />
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>REFrostedViewController.xcscheme</key>
+		<key>Pods-mapping.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false />
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
-		<key>SDWebImage.xcscheme</key>
+		<key>REFrostedViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false />
 			<key>orderHint</key>
 			<integer>7</integer>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false />
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -71,11 +78,6 @@
 			<key>primary</key>
 			<true />
 		</dict>
-		<key>66477655DC325DAF69CB119B2C342987</key>
-		<dict>
-			<key>primary</key>
-			<true />
-		</dict>
 		<key>775457BF51EA289643437E7BBABC3821</key>
 		<dict>
 			<key>primary</key>
@@ -91,22 +93,12 @@
 			<key>primary</key>
 			<true />
 		</dict>
-		<key>B67660651329C0720900A1D83A893254</key>
-		<dict>
-			<key>primary</key>
-			<true />
-		</dict>
 		<key>CD2B367A6ADAD06EE4F327DD0F8F1B6E</key>
 		<dict>
 			<key>primary</key>
 			<true />
 		</dict>
 		<key>D058B89EB3B3DF45457A2DCD3971AFFE</key>
-		<dict>
-			<key>primary</key>
-			<true />
-		</dict>
-		<key>F09C3458692FFA1067ADC7A3C22BD044</key>
 		<dict>
 			<key>primary</key>
 			<true />

@@ -203,7 +203,7 @@
 				TargetAttributes = {
 					79EF80CA1DF653810015CA19 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 8QDRY8G548;
+						DevelopmentTeam = HKQUN9V59W;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -436,7 +436,8 @@
 			baseConfigurationReference = 1FF113818CC424CF8B80F8D2 /* Pods-mapping.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8QDRY8G548;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HKQUN9V59W;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,7 +456,8 @@
 			baseConfigurationReference = DEBBCC27856377549D601A44 /* Pods-mapping.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8QDRY8G548;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HKQUN9V59W;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

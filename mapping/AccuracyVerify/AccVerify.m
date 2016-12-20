@@ -113,6 +113,7 @@ NSString* Samples;
     [queryProject whereKey:@"objectId" equalTo:[project objectId]];
     [query whereKey:@"project" matchesQuery:queryProject];
     [query whereKey:@"type" equalTo:@"check_point"];
+    [query setLimit:5000];
     [query findObjectsInBackgroundWithBlock:^(NSArray<id> *objects, NSError *error) {
         if(!error) {
             if(objects) {

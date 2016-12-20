@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "96C07495C1C1212812CF9C35178D24A1"
-               BlueprintName = "CMPopTipView"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libCMPopTipView.a">
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = '96C07495C1C1212812CF9C35178D24A1'
+               BlueprintName = 'CMPopTipView'
+               ReferencedContainer = 'container:Pods.xcodeproj'
+               BuildableName = 'libCMPopTipView.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
