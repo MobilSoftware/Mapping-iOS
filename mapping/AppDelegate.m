@@ -26,6 +26,7 @@
         configuration.server = @"https://api.sailstech.com/parse";
         configuration.localDatastoreEnabled=true;
     }]];
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
     return YES;
 }
 
