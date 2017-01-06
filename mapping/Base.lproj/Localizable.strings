@@ -26,3 +26,5 @@ _version="Version";
 delete_result="Are you sure to delete measurement results?";
 ok = "ok";
 "no_email_account" = "There is no email account, please setup email account first.";
+"input_measurement_title"="Please input the title of these measurement results";
+"Confirm"="Confirm";

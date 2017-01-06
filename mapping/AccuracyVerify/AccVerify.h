@@ -42,5 +42,5 @@
 
 + (void)CalculateAccuracy;
 
-+ (NSString *)SaveToCSVFile;
++ (NSString *)SaveToCSVFile:(NSString *)title;
 @end

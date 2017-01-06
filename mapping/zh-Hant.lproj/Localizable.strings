@@ -27,3 +27,5 @@ _version="版本";
 delete_result="確定要刪除量測結果嗎？";
 ok="好";
 no_email_account="未設置Email帳戶，請先設置郵件信箱";
+"input_measurement_title"="請輸入本次量測結果名稱";
+"Confirm" = "確認";

@@ -303,12 +303,13 @@ NSString* Samples;
     deviation=pow(deviation,0.5);
     Deviation=[AccVerify getFormatedMeter:deviation];
 }
-+(NSString*) SaveToCSVFile {
+
++ (NSString *)SaveToCSVFile:(NSString *)title {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"output.csv"];
 
-    NSString *output = @"";
+    NSString *output = [NSString stringWithFormat:@"Name,%@\n",title];
     output=[NSString stringWithFormat:@"%@Samples,%@\n",output,Samples];
     output=[NSString stringWithFormat:@"%@Std. Deviation,%@\n",output,Deviation];
     output=[NSString stringWithFormat:@"%@Avg. Accuracy,%@\n",output,Accuracy];

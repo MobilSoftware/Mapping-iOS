@@ -74,17 +74,36 @@
         [self presentViewController:alert animated:YES completion:nil];
         return;
     }
-    NSString *file=[AccVerify SaveToCSVFile];
-    MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
-    mailer.mailComposeDelegate = self;
-    NSString* name= [((NSString *) projectObject[@"name"]) stringByAppendingString:@" Measurement Result"];
-    [mailer setSubject:name];
-    [mailer addAttachmentData:[NSData dataWithContentsOfFile:file]
-                     mimeType:@"text/csv"
-                     fileName:@"output.csv"];
-    [self presentModalViewController:mailer animated:YES];
+    UIAlertController *alert = [UIAlertController
+            alertControllerWithTitle:nil
+                             message:ZpLocalizedString(@"input_measurement_title")
+                      preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:ZpLocalizedString(@"Confirm")
+                                              style:UIAlertActionStyleDefault
+                                            handler:^(UIAlertAction *action) {
+                                                NSString* measurementTitle=alert.textFields[0].text;
+                                                if(measurementTitle.length==0) {
+                                                    measurementTitle=@"output";
+                                                }
+                                                NSString *file=[AccVerify SaveToCSVFile:measurementTitle];
+                                                MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+                                                mailer.mailComposeDelegate = self;
+                                                NSString* name= [((NSString *) projectObject[@"name"]) stringByAppendingString:@" Measurement Result"];
+                                                [mailer setSubject:name];
+                                                [mailer addAttachmentData:[NSData dataWithContentsOfFile:file]
+                                                                 mimeType:@"text/csv"
+                                                                 fileName:(@"%@.csv",measurementTitle)];
+                                                [self presentModalViewController:mailer animated:YES];
+                                            }]];
 
+    [alert addTextFieldWithConfigurationHandler:nil];
+    [alert addAction:[UIAlertAction actionWithTitle:ZpLocalizedString(@"Cancel")
+                                              style:UIAlertActionStyleDefault
+                                            handler:nil]];
+
+    [self presentViewController:alert animated:YES completion:nil];
 }
+
 - (BOOL)changeMode:(int)mode {
     if((mode&0x0fff)==(_currentMode&0xfff)) {
         _currentMode=mode;
