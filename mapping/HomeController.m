@@ -414,6 +414,9 @@
         [CommonDefine showPleaseWaitHudToView:self.view withMSG:ZpLocalizedString(@"Progressing")];
         PFQuery *query= [[PFQuery alloc] initWithClassName:@"Project"];
         [query whereKey:@"visible" equalTo:@YES];
+        if([PFUser currentUser][@"no_access_public"]) {
+            [query whereKey:@"public" equalTo:@NO];
+        }
         [query setLimit:1000];
         [query findObjectsInBackgroundWithBlock:^(NSArray<id> *objects, NSError *error) {
             [CommonDefine hidePleaseWaitHudForView:self.view];
