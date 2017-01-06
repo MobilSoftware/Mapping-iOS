@@ -48,6 +48,21 @@
     __weak IBOutlet UILabel *labelAccuracy;
     __weak IBOutlet UILabel *labelDeviation;
 }
+- (IBAction)clearVerificationResults:(id)sender {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
+                                                                   message:ZpLocalizedString(@"delete_result")
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:ZpLocalizedString(@"yes")
+                                              style:UIAlertActionStyleDefault
+                                            handler:^(UIAlertAction * action) {
+                                                [AccVerify ClearMeasurementResult:mSailsMap];
+                                                [self clearMeasurementTitle];
+                                            }]];
+    [alert addAction:[UIAlertAction actionWithTitle:ZpLocalizedString(@"no")
+                                              style:UIAlertActionStyleCancel
+                                            handler:nil]];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 - (IBAction)emailCSVFile:(id)sender {
     NSString *file=[AccVerify SaveToCSVFile];
     MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
@@ -604,12 +619,14 @@
     [mPopupInfoView setHidden:true];
     [mSailsMap clearMap];
     [bFloor setHidden:true];
+    [self clearMeasurementTitle];
+
+}
+-(void) clearMeasurementTitle {
     labelSample.text =@"0";
     labelDeviation.text =@"-";
     labelAccuracy.text = @"-";
-
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

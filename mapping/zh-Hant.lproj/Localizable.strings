@@ -23,3 +23,5 @@ no="否";
 confirm_to_logout="確認要登出嗎？";
 Progressing="加載中";
 _version="版本";
+
+delete_result="確定要刪除量測結果嗎？";

@@ -64,6 +64,14 @@ NSString* Samples;
                                                }];
 
 }
++(void) ClearMeasurementResult:(SailsLocationMapView *)sailsMapView {
+    [checkPointList removeAllObjects];
+    for(POI* poi in poiList) {
+        [poi setIconType:GENERAL];
+    }
+    [AccVerify CalculateAccuracy];
+    [AccVerify ShowFloorPOIsWithSAILSMapView:sailsMapView Floor:[sailsMapView getCurrentBrowseFloorName]];
+}
 + (void)StopAccVerifyWithSailsMapView:(SailsLocationMapView *)sailsMapView {
     @synchronized([sailsMapView getDynamicOverlays]){
 

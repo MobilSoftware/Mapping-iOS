@@ -26,6 +26,9 @@
 
 + (void)InitParameters;
 
+
++ (void)ClearMeasurementResult:(SailsLocationMapView *)sailsMapView;
+
 + (void)StopAccVerifyWithSailsMapView:(SailsLocationMapView *)view;
 
 
