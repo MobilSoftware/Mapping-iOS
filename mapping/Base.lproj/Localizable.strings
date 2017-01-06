@@ -24,3 +24,5 @@ confirm_to_logout="Are you sure to logout?";
 Progressing="Progressing";
 _version="Version";
 delete_result="Are you sure to delete measurement results?";
+ok = "ok";
+"no_email_account" = "There is no email account, please setup email account first.";

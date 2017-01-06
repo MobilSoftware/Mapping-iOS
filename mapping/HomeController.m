@@ -64,6 +64,16 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 - (IBAction)emailCSVFile:(id)sender {
+    if(![MFMailComposeViewController canSendMail]) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
+                                                                       message:ZpLocalizedString(@"no_email_account")
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:ZpLocalizedString(@"ok")
+                                                  style:UIAlertActionStyleDefault
+                                                handler:nil]];
+        [self presentViewController:alert animated:YES completion:nil];
+        return;
+    }
     NSString *file=[AccVerify SaveToCSVFile];
     MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
     mailer.mailComposeDelegate = self;
